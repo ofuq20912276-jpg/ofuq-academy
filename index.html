@@ -1,356 +1,211 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#0D223D">
-  <meta name="description" content="أكاديمية أفق للتعليم عن بُعد — تعليم تفاعلي للأطفال مع مدرسين متخصصين أونلاين، من أي مكان وفي أي وقت.">
-  <meta name="keywords" content="أكاديمية أفق, OFUQ, تعليم أونلاين, مدرسين مصريين, دروس أونلاين, الإمارات, السعودية, قطر, الكويت, عمان, البحرين">
-  <meta name="author" content="OFUQ Academy">
-  <link rel="icon" type="image/png" sizes="256x256" href="favicon.png">
-  <link rel="apple-touch-icon" href="favicon.png">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="ar_AR">
-  <meta property="og:title" content="أكاديمية أفق | تعليم تفاعلي يصنع مستقبل طفلك">
-  <meta property="og:description" content="حصص أونلاين تفاعلية مع مدرسين متخصصين بطريقة تناسب احتياجات كل طالب.">
-  <meta property="og:image" content="og-image.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="أكاديمية أفق | OFUQ">
-  <meta name="twitter:description" content="تعليم تفاعلي أونلاين يصنع مستقبل طفلك.">
-  <meta name="twitter:image" content="og-image.jpg">
-  <title>أكاديمية أفق | OFUQ — تعليم تفاعلي يصنع مستقبل طفلك</title>
-
-  <!-- Google Analytics 4 / Meta Pixel: ضع IDs الخاصة بك في CONFIG أسفل الصفحة، ولن يتم تحميل أي تتبع قبل إضافة ID. -->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap');
-    :root{--navy:#0D223D;--blue:#1E4E79;--orange:#F47C20;--sky:#7DB7E8;--off:#F5F7FA;--white:#fff;--ink:#17324d;--line:#dce7f0;--green:#25D366}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--white);color:var(--navy);font-family:Cairo,Arial,sans-serif}button,a{font:inherit}a{text-decoration:none;color:inherit}.container{width:min(1180px,92%);margin:auto}
-    .nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid #0d223d12}.nav-inner{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{width:155px;height:70px;object-fit:contain;object-position:center;display:block}.footer-logo{width:155px;max-width:100%;height:auto;display:block}.footer-logo-wrap{background:#fff;border-radius:16px;padding:9px 12px;display:inline-flex;align-items:center;box-shadow:0 8px 24px #00000018}.nav-links{display:flex;gap:24px;font-size:14px;font-weight:700}.nav-links a{transition:.2s}.nav-links a:hover{color:var(--orange)}
-    .btn{border:0;border-radius:999px;padding:13px 21px;font-weight:800;cursor:pointer;transition:.25s;display:inline-flex;align-items:center;justify-content:center;gap:9px}.btn-orange{background:var(--orange);color:#fff;box-shadow:0 12px 30px #f47c2035}.btn-orange:hover{transform:translateY(-3px);box-shadow:0 17px 35px #f47c2048}.btn-whatsapp{background:var(--green);color:#fff;box-shadow:0 12px 30px #25d36632}.btn-whatsapp:hover{transform:translateY(-3px)}.ghost{border:1px solid #1e4e7935;background:#fff;color:var(--blue)}
-    .hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#fff 0%,#f5f7fa 58%,#e9f3fb 100%);min-height:710px;display:flex;align-items:center}.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;pointer-events:none}.hero:before{width:520px;height:520px;background:#7db7e81e;left:-190px;top:-210px}.hero:after{width:390px;height:390px;background:#f47c2012;right:-130px;bottom:-170px}.hero-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:center;position:relative;z-index:2}.eyebrow{color:var(--blue);font-weight:800;letter-spacing:.2px}.hero-copy h1{font-size:clamp(40px,5.4vw,72px);line-height:1.08;margin:12px 0}.hero-copy h1 span{color:var(--orange)}.hero-copy p{font-size:18px;line-height:2;max-width:600px;color:#38536d}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.micro-points{display:flex;flex-wrap:wrap;gap:16px;margin-top:22px;color:#506b80;font-size:13px;font-weight:700}.micro-points span{display:flex;gap:7px;align-items:center}
-    .hero-visual{height:540px;position:relative;perspective:1400px}.scene{position:absolute;inset:20px 0;transform-style:preserve-3d;animation:floatScene 7s ease-in-out infinite}.hero-photo{position:absolute;inset:70px 25px 60px 25px;border-radius:38px;overflow:hidden;transform:rotateY(-8deg) rotateX(3deg);box-shadow:0 35px 80px #0d223d32;border:7px solid rgba(255,255,255,.8);background:#dceaf4}.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center}.hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,#0d223d12,transparent 55%,#f47c2038)}.glass{position:absolute;background:rgba(255,255,255,.86);border:1px solid #fff;backdrop-filter:blur(10px);box-shadow:0 18px 45px #0d223d20;border-radius:20px;padding:13px 17px;font-weight:800;z-index:3}.glass-1{right:-2px;bottom:38px}.glass-2{left:0;top:55px}.glass-3{left:22%;bottom:2px;background:var(--navy);color:#fff}.orb{position:absolute;border-radius:50%;z-index:-1}.orb-a{width:190px;height:190px;right:2%;top:0;background:linear-gradient(145deg,var(--sky),var(--blue));opacity:.22}.orb-b{width:130px;height:130px;left:4%;bottom:8%;background:linear-gradient(145deg,var(--orange),#ffbf85);opacity:.35}.book-3d,.flask-3d,.globe-3d{position:absolute;z-index:4;font-size:44px;filter:drop-shadow(0 10px 10px #0d223d20);animation:bob 4.5s ease-in-out infinite}.book-3d{right:7%;top:4%}.flask-3d{left:8%;top:20%;animation-delay:.6s}.globe-3d{right:2%;bottom:12%;animation-delay:1s}
-    section{padding:92px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 44px}.section-head h2{font-size:clamp(30px,4vw,42px);margin:8px 0}.section-head h2 span{color:var(--orange)}.section-head p{color:#557087;line-height:1.9}
-    .features,.subjects,.countries{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.card{background:#fff;border:1px solid #0d223d12;border-radius:26px;padding:27px;box-shadow:0 14px 38px #0d223d0d;transition:.35s;position:relative;overflow:hidden}.card:after{content:"";position:absolute;width:110px;height:110px;border-radius:50%;background:#7db7e812;left:-32px;bottom:-32px}.card:hover{transform:translateY(-8px);box-shadow:0 25px 55px #0d223d18}.icon{width:64px;height:64px;border-radius:20px;display:grid;place-items:center;font-size:31px;background:linear-gradient(145deg,#eef6fd,#fff);margin-bottom:17px;box-shadow:inset 0 1px 0 #fff,0 10px 20px #0d223d0b}.card h3{margin:0 0 8px}.card p{color:#60768a;line-height:1.8;margin:0}
-    #subjects{background:var(--off)}.subject{min-height:180px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}.subject:nth-child(3) .icon{background:#fff0e7}.subject:nth-child(4) .icon{background:#edf8ff}.subject:nth-child(5) .icon{background:#edf8f0}
-    
-    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.step{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid #0d223d12;border-radius:24px;padding:25px;box-shadow:0 15px 40px #0d223d0b}.step-num{min-width:48px;height:48px;border-radius:15px;background:var(--orange);color:#fff;display:grid;place-items:center;font-family:Poppins;font-weight:800}.step h3{margin:0 0 7px}.step p{margin:0;color:#60768a;line-height:1.8}
-    .gulf{background:linear-gradient(135deg,#f5f7fa,#eaf4fb);position:relative;overflow:hidden}.gulf-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:45px;align-items:center}.gulf-art{min-height:360px;position:relative;display:grid;place-items:center}.globe-big{width:280px;height:280px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#9bd0f7,#1e4e79 72%);box-shadow:inset -25px -20px 50px #0d223d50,0 35px 70px #0d223d2b;position:relative}.globe-big:after{content:"";position:absolute;inset:30px;border:3px dashed #fff8;border-radius:50%;transform:rotate(-18deg)}.pin{position:absolute;color:var(--orange);font-size:32px;filter:drop-shadow(0 8px 7px #0d223d30)}.p1{right:19%;top:18%}.p2{left:21%;top:35%}.p3{right:34%;bottom:18%}.gulf-copy h2{font-size:clamp(30px,4vw,44px);margin:0 0 12px}.gulf-copy h2 span{color:var(--orange)}.gulf-copy p{color:#557087;line-height:2}.country-pills{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}.country{padding:11px 16px;background:#fff;border:1px solid #0d223d12;border-radius:999px;font-weight:800;box-shadow:0 8px 22px #0d223d0a}.country small{display:block;color:#6b8294;font-weight:600;font-size:10px;margin-top:2px}
-    .testimonial-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.quote{background:var(--off);border-radius:25px;padding:25px;border-right:5px solid var(--orange);line-height:1.9}.quote strong{display:block;margin-top:12px}.stars{color:var(--orange);letter-spacing:2px}
-    .cta-section{background:linear-gradient(120deg,var(--navy),var(--blue));color:#fff;text-align:center;position:relative;overflow:hidden;padding:75px 0}.cta-section:before{content:"";position:absolute;width:430px;height:430px;border:1px solid #ffffff18;border-radius:50%;left:-140px;top:-220px}.cta-section h2{font-size:clamp(32px,5vw,48px);margin:0 0 12px}.cta-section p{color:#dce7f0}.cta-section .btn{margin-top:15px}
-    footer{background:#071827;color:#fff;padding:35px 0}.footer-inner{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:25px;align-items:start}.footer-col h4{margin:0 0 12px}.footer-col a{display:block;color:#c9d7e3;margin:7px 0;font-size:13px}.footer-col a:hover{color:#fff}.footer-bottom{border-top:1px solid #ffffff16;margin-top:25px;padding-top:18px;color:#9fb1c1;font-size:12px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-    .floating-wa{display:none;position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:var(--green);color:#fff;z-index:150;align-items:center;justify-content:center;font-size:29px;box-shadow:0 12px 30px #0d223d35;border:3px solid #fff}.floating-wa:hover{transform:scale(1.05)}
-    .icon svg{width:34px;height:34px;fill:none;stroke:var(--blue);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.book-3d svg,.flask-3d svg,.globe-3d svg{width:50px;height:50px;fill:none;stroke:var(--blue);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.book-3d{color:var(--orange)}.flask-3d{color:var(--orange)}.globe-3d{color:var(--blue)}.book-3d svg{filter:drop-shadow(0 10px 8px #0d223d20)}.floating-wa svg{width:31px;height:31px;display:block;fill:#fff;stroke:none}.btn-whatsapp svg{width:24px;height:24px;display:block;fill:currentColor;stroke:none}.pin-dot{display:block;width:18px;height:18px;border-radius:50% 50% 50% 0;background:var(--orange);transform:rotate(-45deg);box-shadow:0 5px 12px #0d223d35}.pin-dot:after{content:"";display:block;width:6px;height:6px;background:#fff;border-radius:50%;margin:6px}
-    .reveal{opacity:0;transform:translateY(28px);transition:opacity .75s ease,transform .75s ease}.reveal.show{opacity:1;transform:none}@keyframes floatScene{50%{transform:translateY(-9px) rotateY(2deg)}}@keyframes bob{50%{transform:translateY(-10px) rotate(4deg)}}
-    /* Brand-safe floating 3D educational icons */
-.floating-edu-icons{position:fixed;inset:0;z-index:3;pointer-events:none;overflow:hidden}
-.edu-3d{position:absolute;width:58px;height:58px;animation:floatVertical 6s ease-in-out infinite;transform:translate3d(0,0,0) rotateX(8deg) rotateY(-12deg)}
-.edu-3d-face{width:100%;height:100%;display:grid;place-items:center;border-radius:18px;background:linear-gradient(145deg,#2d6d9c 0%,var(--blue) 58%,var(--navy) 100%);border:1px solid rgba(255,255,255,.7);box-shadow:inset 7px 7px 12px rgba(255,255,255,.2),inset -8px -9px 14px rgba(0,0,0,.18),0 18px 28px rgba(13,34,61,.18);transform:rotate(-8deg);position:relative}
-.edu-3d-face:after{content:"";position:absolute;right:5px;bottom:-7px;width:47px;height:10px;border-radius:50%;background:rgba(13,34,61,.18);filter:blur(6px);z-index:-1}
-.edu-3d-face.orange{background:linear-gradient(145deg,#ffad63,var(--orange) 58%,#d75a08)}
-.edu-3d-face.sky{background:linear-gradient(145deg,#a8d8fb,var(--sky) 58%,#4e91c3)}
-.edu-3d-face svg{width:31px;height:31px;fill:none;stroke:#fff;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(2px 3px 2px rgba(0,0,0,.2))}
-.edu-book-float{right:4.5%;top:23%;animation-delay:-1s}.edu-flask-float{left:5%;top:48%;animation-delay:-3s}.edu-globe-float{right:7%;top:72%;animation-delay:-4.5s}.edu-laptop-float{left:9%;top:82%;animation-delay:-2s}
-@keyframes floatVertical{0%,100%{margin-top:-14px}50%{margin-top:18px}}
-.social-links{display:flex;gap:10px;margin-top:14px}
-.social-btn{width:42px!important;height:42px;border-radius:13px;background:#102e4d;border:1px solid rgba(255,255,255,.12);display:grid!important;place-items:center;margin:0!important;transition:.25s}
-.social-btn:hover{background:var(--orange);transform:translateY(-3px)}
-.social-btn svg{width:21px;height:21px;fill:none;stroke:#fff;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.social-btn:first-child svg{fill:none}
-@media(max-width:950px){.floating-edu-icons{opacity:.72}.edu-3d{width:48px;height:48px}.edu-3d-face svg{width:26px;height:26px}.edu-book-float{right:2%;top:19%}.edu-flask-float{left:2%;top:43%}.edu-globe-float{right:2%;top:68%}.edu-laptop-float{left:3%;top:84%}}
-@media(max-width:600px){.floating-edu-icons{opacity:.42}.edu-3d{width:40px;height:40px}.edu-3d-face{border-radius:13px}.edu-3d-face svg{width:22px;height:22px}.edu-book-float{right:1%;top:17%}.edu-flask-float{left:1%;top:41%}.edu-globe-float{right:1%;top:69%}.edu-laptop-float{left:2%;top:84%}}
-@media(prefers-reduced-motion:reduce){.edu-3d{animation:none!important}}
-@media(max-width:950px){.nav-links{display:none}.hero-grid,.gulf-grid{grid-template-columns:1fr}.hero-copy{text-align:center}.hero-copy p{margin:auto}.hero-actions,.micro-points{justify-content:center}.hero-visual{height:480px}.features,.subjects,.countries{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}.testimonial-wrap{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr 1fr}}
-    @media(max-width:600px){.nav-inner{min-height:72px}.logo{width:135px;height:60px}.nav .btn{padding:10px 14px;font-size:12px}.hero{min-height:760px}.hero-copy h1{font-size:42px}.hero-copy p{font-size:16px}.hero-actions .btn{width:100%}.hero-visual{height:350px}.hero-photo{inset:55px 8px 45px}.glass{font-size:11px;padding:9px 11px}.glass-2{left:-2px;top:30px}.glass-1{right:-3px;bottom:22px}.glass-3{left:13%;bottom:0}.book-3d,.flask-3d,.globe-3d{font-size:32px}.features,.subjects,.countries{grid-template-columns:1fr}.card{padding:23px}.teacher-photo{height:250px}.gulf-art{min-height:280px}.globe-big{width:220px;height:220px}.footer-inner{grid-template-columns:1fr}.footer-bottom{display:block}.footer-bottom span{display:block;margin-top:6px}.floating-wa{display:flex}}
-    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
-
-    /* Gulf map: scoped layout fix */
-    #gulf .gulf-grid {
-      display:grid;
-      grid-template-columns:minmax(300px, .95fr) minmax(0, 1.05fr);
-      align-items:center;
-      gap:56px;
-    }
-    #gulf .gulf-art {
-      min-height:0;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      position:relative;
-    }
-    #gulf .hero-image {
-      width:min(100%, 360px);
-      aspect-ratio:1/1;
-      margin:0 auto;
-      overflow:hidden;
-      border-radius:28px;
-      background:#fff;
-      box-shadow:0 18px 45px rgba(13,34,61,.14);
-    }
-    #gulf .hero-image img {
-      width:100%;
-      height:100%;
-      display:block;
-      object-fit:cover;
-      border-radius:inherit;
-    }
-    #gulf .gulf-copy {
-      min-width:0;
-      text-align:right;
-    }
-    #gulf .gulf-copy p {
-      max-width:650px;
-      margin-right:0;
-      margin-left:auto;
-    }
-
-    @media (max-width:950px) {
-      #gulf .gulf-grid {
-        grid-template-columns:1fr 1fr;
-        gap:32px;
-      }
-      #gulf .hero-image { width:min(100%, 300px); }
-    }
-
-    @media (max-width:600px) {
-      #gulf.gulf {
-        padding:60px 18px;
-      }
-      #gulf .gulf-grid {
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        gap:30px;
-      }
-      #gulf .gulf-copy {
-        order:1;
-        width:100%;
-        text-align:center;
-      }
-      #gulf .gulf-art {
-        order:2;
-        width:100%;
-        min-height:0;
-      }
-      #gulf .hero-image {
-        width:190px;
-        height:190px;
-        flex:none;
-        margin:0 auto;
-        border-radius:22px;
-      }
-      #gulf .hero-image img {
-        width:100%;
-        height:100%;
-        object-fit:cover;
-      }
-      #gulf .gulf-copy h2 {
-        font-size:clamp(30px,8.5vw,40px);
-        line-height:1.25;
-      }
-      #gulf .gulf-copy p {
-        max-width:100%;
-        margin:0 auto;
-        font-size:15px;
-        line-height:1.9;
-      }
-      #gulf .country-pills {
-        justify-content:center;
-        display:grid;
-        grid-template-columns:repeat(3,minmax(0,1fr));
-        gap:8px;
-        width:100%;
-        margin:22px 0 25px;
-      }
-      #gulf .country {
-        min-width:0;
-        padding:9px 4px;
-        border-radius:14px;
-        font-size:13px;
-      }
-      #gulf .country small { font-size:10px; }
-      #gulf .gulf-copy .btn {
-        width:min(100%,300px);
-        margin:0 auto;
-      }
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OFUQ Academy | Year 4 Maths Challenge</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0D223D;--blue:#1E4E79;--orange:#F47C20;--sky:#7DB7E8;--ink:#18324b;--muted:#60758a;--paper:#f4f7fb;--white:#fff;--line:#dce6ef;--green:#18865b;--red:#c84b4b}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Poppins','Cairo',Arial,sans-serif}
+header{background:linear-gradient(120deg,var(--navy),var(--blue));color:#fff;padding:25px 18px 30px;text-align:center;position:relative;overflow:hidden}
+header:before,header:after{content:"";position:absolute;border:2px solid #ffffff18;border-radius:50%;width:230px;height:230px;top:-140px}
+header:before{left:-60px}header:after{right:-60px}
+.brand{display:inline-flex;align-items:center;justify-content:center;position:relative}
+.brand-logo{display:block;width:min(260px,72vw);height:auto;background:#F5F7FA;border-radius:14px;padding:8px 12px;box-shadow:0 8px 24px #06182a22}
+header h1{font-size:clamp(25px,5vw,38px);margin:18px 0 7px;position:relative;font-family:'Poppins',sans-serif}
+header p{margin:0;color:#dceafa;font-size:15px;position:relative}
+.wrap{width:min(920px,94%);margin:24px auto 55px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 8px 28px #0d223d0b;margin-bottom:18px}
+h2{color:var(--navy);font-size:21px;margin:0 0 8px;font-family:'Cairo',sans-serif}.intro{color:var(--muted);line-height:1.6;margin:0 0 18px}
+label{display:block;font-weight:700;margin-bottom:7px}
+input[type=text]{width:100%;padding:13px 14px;border:1px solid #cbd8e4;border-radius:10px;font-size:16px;outline:none}
+input:focus{border-color:var(--blue);box-shadow:0 0 0 3px #7db7e833}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.pill{background:#edf4fa;color:var(--blue);padding:7px 11px;border-radius:30px;font-size:12px;font-weight:700}
+.progress-top{display:flex;justify-content:space-between;gap:10px;color:var(--muted);font-size:13px;margin-bottom:9px}
+.track{height:9px;background:#e8eef4;border-radius:20px;overflow:hidden}.fill{height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--sky));transition:width .25s}
+.section-tag{color:var(--orange);font-weight:800;text-transform:uppercase;font-size:12px;letter-spacing:.7px;margin-bottom:9px}
+.question{font-size:20px;line-height:1.45;color:var(--navy);font-weight:700;margin:8px 0 17px}
+.hint{color:var(--muted);font-size:13px;margin:-8px 0 16px}
+.options{display:grid;gap:10px}
+.option{display:flex;align-items:center;gap:11px;padding:13px 14px;border:1px solid var(--line);border-radius:11px;cursor:pointer;transition:.15s}
+.option:hover{border-color:var(--sky);background:#f7fbff}.option input{accent-color:var(--orange);width:17px;height:17px}
+.answer-input{max-width:420px}
+.actions{display:flex;justify-content:space-between;gap:10px;margin-top:22px}
+button{border:0;border-radius:10px;padding:12px 19px;font-size:15px;font-weight:800;cursor:pointer}
+.primary{background:var(--orange);color:#fff}.primary:hover{filter:brightness(.96)}
+.secondary{background:#eaf0f6;color:var(--navy)}button:disabled{opacity:.45;cursor:not-allowed}
+.note{font-size:12px;color:var(--muted);line-height:1.6;margin-top:13px}
+.hidden{display:none!important}
+.result-hero{text-align:center;background:linear-gradient(130deg,var(--navy),var(--blue));color:#fff;border-radius:16px;padding:25px}
+.score{font-size:54px;font-weight:900;margin:7px 0}.result-hero p{margin:4px;color:#dbe8f4}
+.skill-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:15px}
+.skill{padding:15px;border:1px solid var(--line);border-radius:12px}.skill strong{display:block;color:var(--navy);margin-bottom:7px}.skill .big{font-size:25px;font-weight:900;color:var(--blue)}
+.review-item{padding:14px 0;border-bottom:1px solid var(--line)}.review-item:last-child{border:0}
+.review-item .q{font-weight:700;margin-bottom:6px}.correct{color:var(--green);font-weight:700}.incorrect{color:var(--red);font-weight:700}.explain{color:var(--muted);font-size:13px;margin-top:5px;line-height:1.5}
+.result-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.certificate{display:none}
+/* Friendly, child-focused details in OFUQ brand colours */
+.panel{border-radius:24px;box-shadow:0 10px 30px #0d223d12}
+#setup{position:relative;overflow:hidden;background:linear-gradient(145deg,#fff 0%,#f5f7fa 100%)}
+#setup:after{content:'★  ✦  ●';position:absolute;right:18px;top:12px;color:var(--orange);font-size:22px;letter-spacing:9px;opacity:.75}
+#setup h2{font-size:25px}
+.pill{border-radius:999px;background:#e8f3fb;border:1px solid #d7e9f7}
+.option{border:2px solid #e3ebf2;border-radius:16px;background:#fbfdff;min-height:54px}
+.option:hover{transform:translateY(-2px);box-shadow:0 5px 14px #1e4e7918}
+.option input{accent-color:var(--orange);width:19px;height:19px}
+#quizArea{background:linear-gradient(160deg,#fff 0%,#f8fbfe 100%)}
+.question{font-size:clamp(20px,3vw,25px);background:#f0f7fc;border-left:5px solid var(--orange);padding:17px 18px;border-radius:15px}
+.track{height:12px;background:#e6eef5}.fill{border-radius:20px}
+.primary{border-radius:999px;box-shadow:0 4px 0 #c75c12;padding:13px 22px}.secondary{border-radius:999px}
+#celebration{position:fixed;inset:0;background:#0d223dbb;display:flex;align-items:center;justify-content:center;padding:20px;z-index:1000}
+.celebrate-card{position:relative;overflow:hidden;width:min(390px,100%);text-align:center;background:#fff;border-radius:28px;padding:30px 24px;box-shadow:0 20px 70px #06182a55;animation:popIn .35s cubic-bezier(.2,1.4,.4,1)}
+.celebrate-card:before,.celebrate-card:after{content:'✦  •  ★  •  ✦';position:absolute;color:var(--orange);font-size:19px;letter-spacing:7px;opacity:.8}.celebrate-card:before{top:13px;left:12px}.celebrate-card:after{bottom:13px;right:12px}
+.celebrate-emoji{font-size:66px;line-height:1.25;animation:bounce .75s ease-in-out infinite alternate}
+.celebrate-card h2{font-size:27px;margin:10px 0;color:var(--blue)}.celebrate-card p{color:var(--muted);margin:0 0 20px}
+.confetti{position:absolute;top:-15px;width:9px;height:16px;border-radius:3px;animation:fall 1.8s linear infinite;opacity:.9}.confetti:nth-child(1){left:12%;background:var(--orange);animation-delay:.1s}.confetti:nth-child(2){left:28%;background:var(--sky);animation-delay:.7s}.confetti:nth-child(3){left:48%;background:var(--blue);animation-delay:.3s}.confetti:nth-child(4){left:68%;background:var(--orange);animation-delay:.9s}.confetti:nth-child(5){left:86%;background:var(--sky);animation-delay:.5s}
+@keyframes popIn{from{transform:scale(.75);opacity:0}to{transform:scale(1);opacity:1}}@keyframes bounce{to{transform:translateY(-8px) rotate(5deg)}}@keyframes fall{to{transform:translateY(430px) rotate(300deg);opacity:0}}
+footer{text-align:center;color:#8293a3;font-size:12px;padding:0 15px 25px}
+@media(max-width:600px){.panel{padding:17px}.info-grid,.skill-grid{grid-template-columns:1fr}.question{font-size:18px}.actions button{flex:1}.brand{font-size:18px}}
+@media print{
+ body{background:#fff}.no-print,header,footer{display:none!important}.wrap{width:100%;margin:0}.panel{box-shadow:none;border:0}
+ #quizArea,#setup,#results .review-block,#results .result-actions{display:none!important}
+ #results{display:block!important}.certificate{display:block!important;border:8px double var(--blue);padding:38px;text-align:center;min-height:90vh}
+ .certificate h1{font-size:34px;color:var(--navy);margin:20px}.certificate .cert-score{font-size:42px;color:var(--orange);font-weight:900}
+}
 </style>
 </head>
 <body>
-<header class="nav">
-  <div class="container nav-inner">
-    <a href="#home" aria-label="أكاديمية أفق"><img class="logo" src="assets/logo-clean.png" alt="أكاديمية أفق OFUQ"></a>
-    <nav class="nav-links" aria-label="التنقل الرئيسي"><a href="#home">الرئيسية</a><a href="#why">لماذا أفق؟</a><a href="#subjects">المواد الدراسية</a><a href="#gulf">طلاب الخليج</a><a href="#contact">تواصل معنا</a></nav>
-    <a class="btn btn-whatsapp" data-whatsapp href="#">تواصل معنا عبر واتساب <span><span aria-hidden="true">↗</span></span></a>
-  </div>
+<header>
+ <div class="brand"><img class="brand-logo" alt="OFUQ Academy logo" src="assets/images/ofuq-logo.png"></div>
+ <h1>Year 4 Maths Challenge</h1>
+ <p>Think • Understand • Achieve</p>
 </header>
-
-<!-- Floating educational 3D icons: move vertically and react subtly to page scroll -->
-<div class="floating-edu-icons" aria-hidden="true">
-  <div class="edu-3d edu-book-float" data-speed="0.12"><div class="edu-3d-face"><svg><use href="#i-book"></use></svg></div></div>
-  <div class="edu-3d edu-flask-float" data-speed="-0.16"><div class="edu-3d-face orange"><svg><use href="#i-science"></use></svg></div></div>
-  <div class="edu-3d edu-globe-float" data-speed="0.09"><div class="edu-3d-face sky"><svg><use href="#i-globe"></use></svg></div></div>
-  <div class="edu-3d edu-laptop-float" data-speed="-0.11"><div class="edu-3d-face"><svg><use href="#i-laptop"></use></svg></div></div>
+<div id="celebration" class="hidden" role="dialog" aria-modal="true" aria-labelledby="celebrateTitle">
+ <div class="celebrate-card">
+  <span class="confetti"></span><span class="confetti"></span><span class="confetti"></span><span class="confetti"></span><span class="confetti"></span>
+  <div class="celebrate-emoji" aria-hidden="true">🎉</div>
+  <h2 id="celebrateTitle">Amazing work!</h2>
+  <p id="celebrateMessage">You got it right! Keep shining, maths star!</p>
+  <button class="primary" id="continueBtn">Next question →</button>
+ </div>
 </div>
-
-<main id="home">
-<section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-copy reveal">
-      <div class="eyebrow">أكاديمية أفق للتعليم عن بُعد</div>
-      <h1>تعليم تفاعلي<br><span>يصنع مستقبل طفلك</span></h1>
-      <p>حصص أونلاين تفاعلية مع مدرسين متخصصين، بطريقة تناسب احتياجات كل طالب وتساعده يتعلم بفهم وثقة.</p>
-      <div class="hero-actions"><a class="btn btn-whatsapp" data-whatsapp href="#">تواصل معنا عبر واتساب <span><svg><use href="#i-whatsapp"></use></svg></span></a><a class="btn ghost" href="#subjects">اكتشف المواد <span>←</span></a></div>
-      <div class="micro-points"><span>✓ مدرسون متخصصون</span><span>✓ حصص مباشرة</span><span>✓ من أي مكان</span></div>
-    </div>
-    <div class="hero-visual reveal" aria-label="طفل يتعلم أونلاين">
-      <div class="scene"><div class="orb orb-a"></div><div class="orb orb-b"></div><div class="hero-photo"><img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=85" alt="طفل يتعلم باستخدام جهاز كمبيوتر" loading="eager"></div><div class="glass glass-1">تعلم ممتع وتفاعلي</div><div class="glass glass-2">مستقبل يبدأ بخطوة</div><div class="glass glass-3">OFUQ • Online Learning</div><div class="book-3d"><svg><use href="#i-book"></use></svg></div><div class="flask-3d"><svg><use href="#i-science"></use></svg></div><div class="globe-3d"><svg><use href="#i-globe"></use></svg></div></div>
-    </div>
-  </div>
+<main class="wrap">
+<section class="panel" id="setup">
+ <h2>Welcome, Maths Explorer! 🚀</h2>
+ <p class="intro">Ready for a fun maths adventure? 🌟 Answer 25 questions, collect your stars, and show what you know! You can move back and change your answers before submitting.</p>
+ <div><label for="studentName">Student name</label><input id="studentName" type="text" placeholder="Enter your full name" autocomplete="name"></div>
+ <div class="pills"><span class="pill">British Curriculum</span><span class="pill">Year 4</span><span class="pill">Term 1 • Chapter 1</span><span class="pill">25 Questions</span></div>
+ <p class="note">Topics: Numbers in numerals, words and expanded form • Counting in powers of ten. This activity is a learning check, not an official school examination.</p>
+ <div class="actions"><span></span><button class="primary" id="startBtn">Start challenge →</button></div>
 </section>
 
-<section id="why"><div class="container">
-  <div class="section-head reveal"><div class="eyebrow">لماذا أفق؟</div><h2>تعليم يناسب <span>طفلك</span></h2><p>نجمع بين المعلم المناسب، الحصة التفاعلية، والمرونة في التعلم من أي مكان.</p></div>
-  <div class="features">
-    <article class="card reveal"><div class="icon"><svg><use href="#i-teacher"></use></svg></div><h3>مدرسون متخصصون</h3><p>اختيار مدرسين لديهم خبرة في التعامل مع احتياجات الطلاب والمناهج المختلفة.</p></article>
-    <article class="card reveal"><div class="icon"><svg><use href="#i-laptop"></use></svg></div><h3>تعليم أونلاين تفاعلي</h3><p>حصص مباشرة باستخدام أدوات تساعد الطالب على المشاركة والفهم والتطبيق.</p></article>
-    <article class="card reveal"><div class="icon"><svg><use href="#i-brain"></use></svg></div><h3>نتعلم بفهم لا بحفظ فقط</h3><p>نركز على بناء الفهم والمهارات بدل الاعتماد على الحفظ وحده.</p></article>
-    <article class="card reveal"><div class="icon"><svg><use href="#i-clock"></use></svg></div><h3>مرونة في المواعيد</h3><p>تعلم من أي مكان وفي الوقت المناسب حسب جدول الطالب والأسرة.</p></article>
-  </div>
-</div></section>
-
-<section id="subjects"><div class="container">
-  <div class="section-head reveal"><div class="eyebrow">المواد الدراسية</div><h2>كل ما يحتاجه طفلك <span>في مكان واحد</span></h2></div>
-  <div class="subjects">
-    <article class="card subject reveal"><div class="icon"><svg><use href="#i-book"></use></svg></div><h3>اللغة العربية</h3><p>تأسيس ومهارات لغوية.</p></article>
-    <article class="card subject reveal"><div class="icon"><svg><use href="#i-lang"></use></svg></div><h3>اللغة الإنجليزية</h3><p>تطوير اللغة والتواصل.</p></article>
-    <article class="card subject reveal"><div class="icon"><svg><use href="#i-math"></use></svg></div><h3>الرياضيات</h3><p>فهم وتدريب وتطبيق.</p></article>
-    <article class="card subject reveal"><div class="icon"><svg><use href="#i-science"></use></svg></div><h3>العلوم</h3><p>تعلم بالفهم والتجربة.</p></article>
-    <article class="card subject reveal"><div class="icon"><svg><use href="#i-laptop"></use></svg></div><h3>التكنولوجيا</h3><p>مهارات رقمية مناسبة للطلاب.</p></article>
-  </div>
-</div></section>
-
-
-
-<section><div class="container"><div class="section-head reveal"><div class="eyebrow">طريقة البداية</div><h2>رحلة تعليمية <span>بسيطة</span></h2></div><div class="steps">
-  <div class="step reveal"><div class="step-num">01</div><div><h3>اختار المادة</h3><p>حدد المادة التي يحتاج طفلك إلى تطويرها.</p></div></div>
-  <div class="step reveal"><div class="step-num">02</div><div><h3>تواصل معنا</h3><p>نتعرف على احتياجات الطالب ونقترح المناسب.</p></div></div>
-  <div class="step reveal"><div class="step-num">03</div><div><h3>ابدأ التعلم</h3><p>ابدأ حصتك أونلاين وتابع التطور خطوة بخطوة.</p></div></div>
-</div></div></section>
-
-<section id="gulf" class="gulf">
-  <div class="container gulf-grid">
-    <div class="gulf-art reveal">
-      <div class="hero-image">
-        <img src="arab-map.png" alt="خريطة مصر ودول الخليج">
-      </div>
-    </div>
-
-    <div class="gulf-copy reveal">
-      <div class="eyebrow">لطلاب الخليج</div>
-      <h2>مدرسون مصريون أونلاين<br><span>لطلاب الخليج</span></h2>
-      <p>نوفر تعليمًا أونلاين بمرونة أكبر للطلاب في دول الخليج، مع مراعاة اختلاف المواعيد واحتياجات كل طالب.</p>
-      <div class="country-pills">
-        <div class="country">الإمارات<small>Online</small></div>
-        <div class="country">السعودية<small>Online</small></div>
-        <div class="country">قطر<small>Online</small></div>
-        <div class="country">الكويت<small>Online</small></div>
-        <div class="country">عُمان<small>Online</small></div>
-        <div class="country">البحرين<small>Online</small></div>
-      </div>
-      <a class="btn btn-whatsapp" data-whatsapp href="#">تواصل معنا عبر واتساب</a>
-    </div>
-  </div>
+<section class="panel hidden" id="quizArea">
+ <div class="progress-top"><span id="questionCount">Question 1 of 25</span><span id="progressPercent">4% complete</span></div>
+ <div class="track"><div class="fill" id="progressFill"></div></div>
+ <div style="height:20px"></div>
+ <div class="section-tag" id="topicLabel">NUMBER REPRESENTATION</div>
+ <div class="pills" style="margin:0 0 12px"><span class="pill">🧠 Think</span><span class="pill">⭐ Try</span><span class="pill">🏆 Shine</span></div>
+ <div class="question" id="questionText"></div>
+ <div class="hint" id="questionHint"></div>
+ <div id="answerArea"></div>
+ <div class="actions">
+  <button class="secondary" id="prevBtn">← Back</button>
+  <button class="primary" id="nextBtn">Next →</button>
+ </div>
+ <p class="note">Your answers are kept in this page while you complete the challenge. Nothing is sent to a server automatically.</p>
 </section>
 
-<section><div class="container">
-  <div class="section-head reveal"><div class="eyebrow">آراء أولياء الأمور</div><h2>تجارب <span>مع أفق</span></h2></div>
-  <div class="testimonial-wrap">
-    <article class="quote reveal"><div class="stars">★★★★★</div>“الحصص تفاعلية والمتابعة واضحة، وده ساعد ابني يكون أكثر ثقة في المادة.”<strong>— ولي أمر طالب</strong></article>
-    <article class="quote reveal"><div class="stars">★★★★★</div>“أكتر حاجة عجبتني إن الشرح أونلاين لكن فيه تفاعل حقيقي مع المدرس.”<strong>— ولي أمر طالبة</strong></article>
-    <article class="quote reveal"><div class="stars">★★★★★</div>“طريقة التواصل سهلة، والمواعيد مرنة ومناسبة لجدول الأسرة.”<strong>— ولي أمر طالب</strong></article>
-  </div>
-</div></section>
-
-<section id="contact" class="cta-section"><div class="container reveal"><div class="eyebrow" style="color:#9fd0f3">أكاديمية أفق</div><h2>مستقبل ابنك يبدأ بخطوة</h2><p>تواصل معنا لمعرفة المادة والمدرس والمواعيد المناسبة لطفلك.</p><a class="btn btn-whatsapp" data-whatsapp href="#">تواصل معنا عبر واتساب <span><svg><use href="#i-whatsapp"></use></svg></span></a></div></section>
+<section class="panel hidden" id="results">
+ <div class="result-hero">
+  <div style="font-weight:800;letter-spacing:1px">OFUQ ACADEMY • PLACEMENT REPORT</div>
+  <div class="score" id="totalScore">0/25</div>
+  <p id="studentGreeting">Well done!</p>
+  <p id="resultMessage"></p>
+ </div>
+ <h2 style="margin-top:22px">Your skill breakdown</h2>
+ <div class="skill-grid">
+  <div class="skill"><strong>Numbers: numerals, words & expanded form</strong><div class="big" id="skillOne">0/13</div><div class="note" id="skillOnePct"></div></div>
+  <div class="skill"><strong>Counting in powers of ten</strong><div class="big" id="skillTwo">0/12</div><div class="note" id="skillTwoPct"></div></div>
+ </div>
+ <div class="review-block">
+  <h2 style="margin-top:25px">Answer review</h2>
+  <p class="intro">Check each answer and read the explanation to understand any mistakes.</p>
+  <div id="reviewList"></div>
+ </div>
+ <div class="result-actions no-print">
+  <button class="primary" id="certificateBtn">Print / Save certificate</button>
+  <button class="secondary" id="reportBtn">Download answer report</button>
+  <button class="secondary" id="retryBtn">Try again</button>
+ </div>
+ <p class="note no-print">To save the certificate as a PDF, choose “Save as PDF” in the print window. The answer report downloads as a JSON file that can be kept and shared with the teacher.</p>
+ <div class="certificate" id="certificate">
+  <div class="brand"><img class="brand-logo" alt="OFUQ Academy logo" src="assets/images/ofuq-logo.png"></div>
+  <h1>Certificate of Achievement</h1>
+  <p style="font-size:18px">This certificate is proudly presented to</p>
+  <h2 id="certName" style="font-size:30px;color:var(--orange)"></h2>
+  <p style="font-size:17px">for completing the Year 4 Maths Challenge</p>
+  <div class="cert-score" id="certScore"></div>
+  <p id="certSchool"></p>
+  <p style="margin-top:55px;color:var(--muted)">Think • Understand • Achieve</p>
+  <p style="font-weight:800;color:var(--blue)">OFUQ ACADEMY</p>
+  <p style="font-size:13px;color:var(--muted)">Inspiring Minds — Shaping the Future</p>
+ </div>
+</section>
 </main>
-
-<footer><div class="container">
-  <div class="footer-inner">
-    <div><div class="footer-logo-wrap"><img class="footer-logo" src="assets/logo-clean.png" alt="أكاديمية أفق OFUQ"></div><p style="color:#c9d7e3;line-height:1.8;font-size:13px">إلهام العقول — صياغة المستقبل</p></div>
-    <div class="footer-col"><h4>روابط سريعة</h4><a href="#why">لماذا أفق؟</a><a href="#subjects">المواد الدراسية</a><a href="#gulf">طلاب الخليج</a></div>
-    <div class="footer-col"><h4>تواصل معنا</h4><a data-whatsapp href="#">WhatsApp: +20 103483571</a><a href="https://www.instagram.com/ofuq_on_academy/" target="_blank" rel="noopener noreferrer">Instagram — @ofuq_on_academy</a><a href="https://www.facebook.com/profile.php?id=61575136595495&locale=ar_AR" target="_blank" rel="noopener noreferrer">Facebook — صفحة أكاديمية أفق</a><div class="social-links" aria-label="وسائل التواصل الاجتماعي"><a class="social-btn" href="https://www.instagram.com/ofuq_on_academy/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg><use href="#i-instagram"></use></svg></a><a class="social-btn" href="https://www.facebook.com/profile.php?id=61575136595495&locale=ar_AR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg><use href="#i-facebook"></use></svg></a></div></div>
-  </div>
-  <div class="footer-bottom"><span>© 2026 أكاديمية أفق OFUQ. جميع الحقوق محفوظة.</span><span>تعليم اليوم... يصنع مستقبل الغد</span></div>
-</div></footer>
-
-<a class="floating-wa" data-whatsapp href="#" aria-label="تواصل معنا عبر واتساب" title="تواصل معنا عبر واتساب"><svg><use href="#i-whatsapp"></use></svg></a>
-
-<svg aria-hidden="true" width="0" height="0" style="position:absolute;overflow:hidden"><defs>
-<symbol id="i-teacher" viewBox="0 0 24 24"><circle cx="12" cy="7" r="3.2"/><path d="M5 21c.6-4 2.8-6 7-6s6.4 2 7 6"/><path d="M3 12h3M18 12h3"/></symbol>
-<symbol id="i-laptop" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="12" rx="1.5"/><path d="M2.5 19h19M8 19l1-3h6l1 3"/></symbol>
-<symbol id="i-brain" viewBox="0 0 24 24"><path d="M9 5.5A3 3 0 0 0 6 8.5v.4A3.2 3.2 0 0 0 5 15a3.5 3.5 0 0 0 4 3.4V20M15 5.5A3 3 0 0 1 18 8.5v.4A3.2 3.2 0 0 1 19 15a3.5 3.5 0 0 1-4 3.4V20M9 9h2M13 9h2M9 14h2M13 14h2M12 4v16"/></symbol>
-<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/><path d="M5 4l-2 2M19 4l2 2"/></symbol>
-<symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H11v16H6.5A2.5 2.5 0 0 0 4 21V5.5Z"/><path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H13v16h4.5A2.5 2.5 0 0 1 20 21V5.5Z"/><path d="M7 7h2M15 7h2"/></symbol>
-<symbol id="i-lang" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M7 9h6M10 9v7M7 16h6M15 9h3M16.5 9l-2 7M14.5 13h4"/></symbol>
-<symbol id="i-math" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M7 7h10M8 11h2M14 11h2M8 15h2M14 15h2M8 18h2M14 18h2"/></symbol>
-<symbol id="i-science" viewBox="0 0 24 24"><path d="M9 3h6M11 3v6l-5 9a2 2 0 0 0 1.8 3h8.4A2 2 0 0 0 18 18l-5-9V3"/><path d="M8 15h8"/><circle cx="15.5" cy="12" r=".7" fill="currentColor" stroke="none"/></symbol>
-<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.8 12h16.4M12 3.5c2.2 2.2 3.3 5 3.3 8.5S14.2 18.3 12 20.5M12 3.5C9.8 5.7 8.7 8.5 8.7 12s1.1 6.3 3.3 8.5"/></symbol>
-<symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.2A9.7 9.7 0 0 0 3.6 16.8L2.4 21.6l4.9-1.3A9.8 9.8 0 1 0 12 2.2Zm0 17.7c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A7.9 7.9 0 1 1 12 19.9Zm4.4-5.8c-.2-.1-1.3-.7-1.5-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1-1.8-.9-3-1.6-4-3.5-.1-.2 0-.4.1-.5l.5-.6c.1-.2.2-.3.1-.5l-.7-1.7c-.1-.2-.4-.3-.6-.3h-.4c-.2 0-.5.1-.7.3-.3.3-.9.9-.9 2.2s.9 2.6 1 2.8c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5-.1 1.3-.5 1.5-1 .2-.5.2-.9.1-1-.1-.1-.3-.2-.5-.3Z"/></symbol>
-<symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></symbol>
-<symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14 21v-8h2.7l.4-3H14V8.1c0-.9.3-1.5 1.6-1.5h1.7V4c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1V10H8v3h2.9v8H14Z"/></symbol>
-</defs></svg>
-
+<footer>OFUQ ACADEMY · Inspiring Minds — Shaping the Future</footer>
 <script>
-  /* =========================
-     OFUQ SITE CONFIG
-     ========================= */
-  const CONFIG = {
-    whatsappNumber: '201034883571',
-    whatsappMessage: 'مرحبًا، أريد معرفة تفاصيل الحجز في أكاديمية أفق.',
-    // أضيفي IDs هنا بعد إنشاء الحسابات، وسيتم تشغيل التتبع تلقائيًا:
-    googleAnalyticsId: '', // مثال: G-XXXXXXXXXX
-    metaPixelId: ''        // مثال: 123456789012345
-  };
-
-  const waUrl = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(CONFIG.whatsappMessage)}`;
-  document.querySelectorAll('[data-whatsapp]').forEach(el=>{el.href=waUrl;el.target='_blank';el.rel='noopener noreferrer'});
-
-  const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-
-  // Subtle scroll parallax for the floating educational icons.
-  const floatingIcons = document.querySelectorAll('.edu-3d[data-speed]');
-  let scrollTick = false;
-  window.addEventListener('scroll', () => {
-    if (scrollTick) return;
-    scrollTick = true;
-    requestAnimationFrame(() => {
-      const y = window.scrollY;
-      floatingIcons.forEach((el, i) => {
-        const speed = Number(el.dataset.speed) || 0;
-        const drift = Math.sin((y / 220) + i) * 8;
-        el.style.transform = `translate3d(0, ${y * speed + drift}px, 0) rotateX(8deg) rotateY(-12deg)`;
-      });
-      scrollTick = false;
-    });
-  }, {passive:true});
-
-  // GA4 — لا يعمل إلا إذا وضعتِ ID حقيقيًا في CONFIG.googleAnalyticsId
-  if(CONFIG.googleAnalyticsId){
-    const s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+CONFIG.googleAnalyticsId;document.head.appendChild(s);
-    window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};window.gtag('js',new Date());window.gtag('config',CONFIG.googleAnalyticsId);
-  }
-  // Meta Pixel — لا يعمل إلا إذا وضعتِ ID حقيقيًا في CONFIG.metaPixelId
-  if(CONFIG.metaPixelId){
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init',CONFIG.metaPixelId);fbq('track','PageView');
-  }
-
-  // تتبع ضغطات واتساب كحدث مهم للإعلانات، عند تشغيل GA/Pixel.
-  document.querySelectorAll('[data-whatsapp]').forEach(el=>el.addEventListener('click',()=>{
-    if(window.gtag && CONFIG.googleAnalyticsId) gtag('event','whatsapp_click',{event_category:'engagement',event_label:'OFUQ WhatsApp CTA'});
-    if(window.fbq && CONFIG.metaPixelId) fbq('trackCustom','WhatsAppClick');
-  }));
+const questions = [
+ {s:1,topic:"Numbers: numerals, words & expanded form",q:"Which numeral represents three thousand, four hundred and twenty-six?",type:"mc",opts:["3,246","3,426","3,462","4,326"],a:1,why:"Three thousand = 3,000; four hundred = 400; twenty-six = 26. So the numeral is 3,426."},
+ {s:1,topic:"Numbers: numerals, words & expanded form",q:"Choose the correct word form for 5,081.",type:"mc",opts:["Five thousand and eighty-one","Five thousand, eight hundred and one","Five hundred and eighty-one","Five thousand and eighteen"],a:0,why:"5,081 has 5 thousands, 0 hundreds, 8 tens and 1 one: five thousand and eighty-one."},
+ {s:1,topic:"Numbers: numerals, words & expanded form",q:"What is the expanded form of 6,304?",type:"mc",opts:["6,000 + 300 + 4","6,000 + 30 + 4","600 + 300 + 4","6,000 + 300 + 40"],a:0,why:"6,304 = 6,000 + 300 + 4. There are no tens."},
+ {s:1,topic:"Numbers: numerals, words & expanded form",q:"Write in numerals: seven thousand, two hundred and nine.",type:"text",a:["7209","7,209"],placeholder:"e.g. 7,209",why:"Seven thousand = 7,000; two hundred = 200; nine = 9. Total: 7,209."},
+ {s:1,topic:"Numbers: numerals, words & expanded form",q:"Which number has 4 thousands, 6 hundreds, 2 tens and 8 ones?",type:"mc",opts:["4,268","4,628","4,682","4,826"],a:1,why:"4 thousands = 4,000; 6 hundreds = 600; 2 tens = 20; 8 ones = 8. The number is 4,628."},
+ {s:1,topic:"Numbers: numerals, words & expanded form",q:"What is the value of the digit 7 in 7,452?",type:"mc",opts:["7","70","700","7,000"],a:3,why:"The 7 is in the thousands place, so its value is 7,000."},
+ {s:1,topic:"Numbers: numerals, words & expanded form",q:"Choose the correct expanded form of 8,090.",type:"mc",opts:["8,000 + 90","8,000 + 900","800 + 90","8,000 + 9"],a:0,why:"8,090 has 8 thousands and 9 tens: 8,000 + 90."},
+ {s:1,topic:"Numbers: numerals, words & expanded form",q:"Write 2,517 in expanded form.",type:"text",a:["2000+500+10+7","2,000+500+10+7","2000 + 500 + 10 + 7","2,000 + 500 + 10 + 7"],placeholder:"e.g. 2,000 + 500 + 10 + 7",why:"2,517 = 2,000 + 500 + 10 + 7."},
+ {s:1,topic:"Numbers: numerals, words & expanded form",q:"Which is the greatest number?",type:"mc",opts:["6,709","6,790","6,079","6,970"],a:3,why:"All have 6 thousands. Compare hundreds: 9 hundreds in 6,970 is the greatest."},
+ {s:1,topic:"Numbers: numerals, words & expanded form",q:"What number is shown by 9,000 + 500 + 30 + 2?",type:"text",a:["9532","9,532"],placeholder:"Enter the numeral",why:"Add the place values: 9,000 + 500 + 30 + 2 = 9,532."},
+ {s:1,topic:"Numbers: numerals, words & expanded form",q:"Which statement about 4,070 is correct?",type:"mc",opts:["4 thousands, 7 hundreds","4 thousands, 7 tens","4 hundreds, 7 tens","4 thousands, 7 ones"],a:1,why:"In 4,070, the 4 is thousands and the 7 is tens."},
+ {s:1,topic:"Numbers: numerals, words & expanded form",q:"Choose the correct word form for 1,615.",type:"mc",opts:["One thousand, six hundred and fifteen","One thousand, sixty-five","Six thousand, one hundred and fifteen","One hundred and sixty-five"],a:0,why:"1,615 = one thousand, six hundred and fifteen."},
+ {s:1,topic:"Numbers: numerals, words & expanded form",q:"What is the missing part? 3,000 + 400 + ___ + 6 = 3,476",type:"mc",opts:["7","70","700","40"],a:1,why:"The tens digit is 7, so the missing value is 70."},
+ {s:2,topic:"Counting in powers of ten",q:"Complete the sequence: 340, 350, 360, ___, 380.",type:"text",a:["370"],placeholder:"Next number",why:"The sequence increases by 10 each time."},
+ {s:2,topic:"Counting in powers of ten",q:"What is 46 × 10?",type:"mc",opts:["46","460","4,600","406"],a:1,why:"Multiplying by 10 makes each digit worth ten times as much: 46 × 10 = 460."},
+ {s:2,topic:"Counting in powers of ten",q:"What is 7 × 100?",type:"mc",opts:["70","107","700","7,000"],a:2,why:"7 hundreds = 700."},
+ {s:2,topic:"Counting in powers of ten",q:"Complete the sequence: 5,600, 5,500, 5,400, ___",type:"text",a:["5300","5,300"],placeholder:"Next number",why:"The sequence decreases by 100 each time. The next number is 5,300."},
+ {s:2,topic:"Counting in powers of ten",q:"Which number is 32 tens?",type:"mc",opts:["32","320","3,200","302"],a:1,why:"32 tens = 32 × 10 = 320."},
+ {s:2,topic:"Counting in powers of ten",q:"What is 405 × 10?",type:"mc",opts:["4,050","405","40,500","4,005"],a:0,why:"405 × 10 = 4,050."},
+ {s:2,topic:"Counting in powers of ten",q:"Complete: 2,300, 2,400, 2,500, ___, 2,700.",type:"text",a:["2600","2,600"],placeholder:"Missing number",why:"The numbers increase by 100. The missing number is 2,600."},
+ {s:2,topic:"Counting in powers of ten",q:"What is 9,000 ÷ 10?",type:"mc",opts:["90","900","9,000","90,000"],a:1,why:"Dividing by 10 makes the number ten times smaller: 9,000 ÷ 10 = 900."},
+ {s:2,topic:"Counting in powers of ten",q:"A number is 100 times greater than 36. What is it?",type:"text",a:["3600","3,600"],placeholder:"Enter the number",why:"36 × 100 = 3,600."},
+ {s:2,topic:"Counting in powers of ten",q:"Which sequence is counting backwards in 1,000s?",type:"mc",opts:["8,000, 7,000, 6,000, 5,000","8,000, 7,900, 7,800, 7,700","2,000, 3,000, 4,000, 5,000","9,000, 8,100, 7,200, 6,300"],a:0,why:"Counting backwards in 1,000s means subtract 1,000 each time."},
+ {s:2,topic:"Counting in powers of ten",q:"What is 64 × 100?",type:"mc",opts:["640","6,400","64,000","6,040"],a:1,why:"64 × 100 = 6,400."}
+];
+let current=0, answers=Array(questions.length).fill(null), student="";
+const $=id=>document.getElementById(id);
+function norm(v){return String(v??"").toLowerCase().replace(/,/g,"").replace(/\s+/g,"").replace(/[×x]/g,"x").trim()}
+function isCorrect(q,ans){if(ans===null||ans==="")return false;if(q.type==="mc")return Number(ans)===q.a;return q.a.some(x=>norm(x)===norm(ans))}
+function start(){student=$("studentName").value.trim();if(!student){$("studentName").focus();alert("Please enter the student's name first.");return}$("setup").classList.add("hidden");$("quizArea").classList.remove("hidden");render()}
+function render(){const q=questions[current];$("questionCount").textContent=`Question ${current+1} of ${questions.length}`;$("progressPercent").textContent=`${Math.round((current+1)/questions.length*100)}% complete`;$("progressFill").style.width=`${(current+1)/questions.length*100}%`;$("topicLabel").textContent=q.topic.toUpperCase();$("questionText").textContent=q.q;$("questionHint").textContent=q.type==="text"?"Type your answer in the box below. Commas are optional.": "Choose one answer.";
+const area=$("answerArea");area.innerHTML="";
+if(q.type==="mc"){const div=document.createElement("div");div.className="options";q.opts.forEach((o,i)=>{const lab=document.createElement("label");lab.className="option";const inp=document.createElement("input");inp.type="radio";inp.name="answer";inp.value=i;inp.checked=String(answers[current])===String(i);inp.addEventListener("change",()=>answers[current]=i);const span=document.createElement("span");span.textContent=o;lab.append(inp,span);div.append(lab)});area.append(div)}
+else{const inp=document.createElement("input");inp.type="text";inp.className="answer-input";inp.placeholder=q.placeholder||"Type your answer";inp.value=answers[current]??"";inp.addEventListener("input",()=>answers[current]=inp.value);area.append(inp)}
+$("prevBtn").disabled=current===0;$("nextBtn").textContent=current===questions.length-1?"Submit challenge ✓":"Next →"}
+function advanceQuestion(){if(current<questions.length-1){current++;render()}else{finish()}}
+function continueAfterCelebration(){$("celebration").classList.add("hidden");advanceQuestion()}
+function next(){const q=questions[current];if(q.type==="text"){const inp=$("answerArea").querySelector("input");answers[current]=inp.value.trim()}if(isCorrect(q,answers[current])){$("celebrateMessage").textContent=["Brilliant! You got it right! 🌟","Fantastic thinking, maths star! ⭐","You nailed it! Keep going! 🚀","Hooray! Another correct answer! 🎈"][current%4];$("celebration").classList.remove("hidden");return}advanceQuestion()}
+function prev(){if(current===0)return;const q=questions[current];if(q.type==="text")answers[current]=$("answerArea").querySelector("input").value.trim();current--;render()}
+function finish(){const unanswered=answers.filter(a=>a===null||a==="").length;if(unanswered>0&&!confirm(`You have ${unanswered} unanswered question(s). Submit anyway?`))return;
+let total=0,s1=0,s2=0;questions.forEach((q,i)=>{if(isCorrect(q,answers[i])){total++;if(q.s===1)s1++;else s2++}});
+$("quizArea").classList.add("hidden");$("results").classList.remove("hidden");$("totalScore").textContent=`${total}/25`;$("studentGreeting").textContent=`Well done, ${student}!`;$("resultMessage").textContent=total>=21?"Excellent work! You show strong understanding of these skills.":total>=15?"Good effort! Review the explanations to strengthen your skills.":"Keep practising! Every mistake is a chance to learn and improve.";
+$("skillOne").textContent=`${s1}/13`;$("skillTwo").textContent=`${s2}/12`;$("skillOnePct").textContent=`${Math.round(s1/13*100)}% correct`;$("skillTwoPct").textContent=`${Math.round(s2/12*100)}% correct`;
+$("certName").textContent=student;$("certScore").textContent=`${total} / 25`; $("certSchool").textContent="British Curriculum • Year 4 Maths • Term 1";
+const list=$("reviewList");list.innerHTML="";questions.forEach((q,i)=>{const ok=isCorrect(q,answers[i]);let given=answers[i]===null||answers[i]===""?"Not answered":q.type==="mc"?q.opts[Number(answers[i])]:answers[i];let correct=q.type==="mc"?q.opts[q.a]:q.a[0];const item=document.createElement("div");item.className="review-item";const title=document.createElement("div");title.className="q";title.textContent=`${i+1}. ${q.q}`;const status=document.createElement("div");status.className=ok?"correct":"incorrect";status.textContent=ok?"✓ Correct": "✗ Not quite";const ans=document.createElement("div");ans.style.fontSize="13px";ans.textContent=`Your answer: ${given}  |  Correct answer: ${correct}`;const why=document.createElement("div");why.className="explain";why.textContent=q.why;item.append(title,status,ans,why);list.append(item)})}
+function downloadReport(){const report={academy:"OFUQ Academy",student,curriculum:"British Curriculum",year:"Year 4",term:"Term 1",chapter:"Chapter 1",total:questions.filter((q,i)=>isCorrect(q,answers[i])).length,outOf:25,skills:[{name:"Numbers in numerals, words and expanded form",score:questions.filter((q,i)=>q.s===1&&isCorrect(q,answers[i])).length,outOf:13},{name:"Counting in powers of ten",score:questions.filter((q,i)=>q.s===2&&isCorrect(q,answers[i])).length,outOf:12}],answers:questions.map((q,i)=>({question:q.q,studentAnswer:answers[i],correct:isCorrect(q,answers[i]),correctAnswer:q.type==="mc"?q.opts[q.a]:q.a[0],explanation:q.why}))};const blob=new Blob([JSON.stringify(report,null,2)],{type:"application/json"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download=`OFUQ-Year4-Maths-${student.replace(/[^a-z0-9\u0600-\u06ff]+/gi,"-")}-report.json`;a.click();URL.revokeObjectURL(url)}
+$("startBtn").addEventListener("click",start);$("nextBtn").addEventListener("click",next);$("continueBtn").addEventListener("click",continueAfterCelebration);$("prevBtn").addEventListener("click",prev);$("certificateBtn").addEventListener("click",()=>window.print());$("reportBtn").addEventListener("click",downloadReport);$("retryBtn").addEventListener("click",()=>{current=0;answers=Array(questions.length).fill(null);$("results").classList.add("hidden");$("setup").classList.remove("hidden")});
 </script>
 </body>
 </html>
